@@ -205,10 +205,12 @@ function refreshSchedule() {
                     id : 'shift-' + index, group: shift.location,
                     content: byLocationShiftElement.html(),
                     start: shift.start, end: shift.end,
-                    style: "background-color: #EF292999"
+                    // style: "background-color: #EF292999"
+                    style: "background-color: #ffa0a0"
                 });
             } else {
-                const skillColor = (shift.employee.skill_set.indexOf(shift.required_skill) === -1? '#ef2929' : '#8ae234');
+                // const skillColor = (shift.employee.skill_set.indexOf(shift.required_skill) === -1? '#ef2929' : '#8ae234');
+                const skillColor = (shift.employee.skill_set.indexOf(shift.required_skill) === -1? '#ef2929' : '#edc574');
                 const byEmployeeShiftElement = $('<div class="card-body p-2"/>')
                         .append($(`<h5 class="card-title mb-2"/>)`)
                                 .append(shift.location))
