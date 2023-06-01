@@ -99,7 +99,8 @@ $(document).ready(function () {
 function getAvailabilityColor(availabilityType) {
     switch (availabilityType) {
         case 'DESIRED':
-            return ' #73d216'; // Tango Chameleon
+            // return ' #73d216'; // Tango Chameleon
+            return ' #bed0f4'; // Tango Chameleon
 
         case 'UNDESIRED':
             return ' #f57900'; // Tango Orange
@@ -120,7 +121,8 @@ function getShiftColor(shift, availabilityMap) {
     if (availabilityMap.has(mapKey)) {
         return getAvailabilityColor(availabilityMap.get(mapKey));
     } else {
-        return " #729fcf"; // Tango Sky Blue
+        // return " #729fcf"; // Tango Sky Blue
+        return " #bed0f4"; // Tango Sky Blue
     }
 }
 
