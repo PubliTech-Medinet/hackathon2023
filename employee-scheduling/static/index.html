@@ -36,6 +36,15 @@
         .card-title {
             font-size: small;
         }
+
+        .logo img {
+            float: right;
+
+        }
+
+        .logo h1 {
+            line-height: 80px;
+        }
     </style>
 </head>
 
@@ -44,7 +53,12 @@
     <div class="sticky-top d-flex justify-content-center align-items-center" aria-live="polite" aria-atomic="true">
         <div id="notificationPanel" style="position: absolute; top: .5rem;"></div>
     </div>
-    <h1>Medinet automatic work scheduler</h1>
+    <div class="logo">
+        <img src="https://medinet.se/static-files/dist/images/logos/medinet_logo.svg" height="80"/>
+        <h1>Automatic work scheduler</h1>
+    </div>
+
+    <br clear="all"/>
 
     <div class="mb-4">
         <button id="solveButton" type="button" class="btn btn-success">
